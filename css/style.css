@@ -3,12 +3,13 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
 :root {
   --white: #fff;
-  --primary: #0E51DA;
-  --deep: #1446AC;
+  --primary: #0e51da;
+  --deep: #1446ac;
 }
 
 html {
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, HelveticaNeue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    HelveticaNeue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 
 body {
@@ -97,7 +98,7 @@ input {
 
 .btn {
   cursor: pointer;
-  color: #FFF;
+  color: #fff;
   font-family: Pretendard;
   font-size: 12px;
   font-style: normal;
@@ -141,12 +142,12 @@ h1 {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  border-bottom: 1px solid #E3E3E8;
+  border-bottom: 1px solid #e3e3e8;
   background-color: #fff;
   justify-content: space-between;
   height: 65px;
   padding: 0 27px 0 20px;
-  color: #4B5262;
+  color: #4b5262;
   text-align: right;
   font-family: Pretendard;
   font-size: 14px;
@@ -159,7 +160,7 @@ h1 {
   gap: 20px;
 }
 .gnb .btn {
-  background: #0C41AC !important;
+  background: #0c41ac !important;
   color: #fff !important;
   border: 0;
 }
@@ -173,7 +174,7 @@ h1 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #FF1C1C;
+  background-color: #ff1c1c;
 }
 .gnb .bell .bellCon {
   position: absolute;
@@ -185,7 +186,7 @@ h1 {
   text-align: left;
   background-color: rgba(227, 228, 232, 0.85);
   -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-radius: 8px;
   overflow: auto;
 }
@@ -194,12 +195,31 @@ h1 {
   width: -moz-max-content;
   width: max-content;
   padding: 8px 12px;
-  border-bottom: 1px solid #E3E3E8;
+  border-bottom: 1px solid #e3e3e8;
   font-size: 13px;
   font-weight: 500;
   line-height: 1.4;
 }
+
+.bellCon .list {
+  max-width: 240px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e3e3e8;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 .gnb .bell .bellCon .list:last-child {
+  border: 0;
+}
+.gnb .mobileMenu {
+  display: none;
+}
+
+.bellCon .list:last-child {
   border: 0;
 }
 .gnb .mobileMenu {
@@ -217,6 +237,7 @@ h1 {
 }
 @media screen and (min-width: 769px) {
   .gnb .mobileMenuPanel,
+  .gnb .bellCon,
   .gnb .offcanvas-backdrop {
     display: none;
   }
@@ -233,7 +254,7 @@ h1 {
 .mobileMenuPanel .nickname {
   padding: 0 20px;
   margin-bottom: 20px;
-  color: #4B5262;
+  color: #4b5262;
   font-family: Pretendard;
   font-size: 14px;
   font-style: normal;
@@ -264,8 +285,8 @@ h1 {
   top: 65px;
   left: 0;
   padding: 20px 0;
-  border-right: 1px solid #E3E3E8;
-  background: #FFF;
+  border-right: 1px solid #e3e3e8;
+  background: #fff;
   width: 240px;
   box-sizing: border-box;
   height: calc(100vh - 65px);
@@ -277,7 +298,7 @@ h1 {
   align-items: center;
   gap: 10px;
   box-sizing: border-box;
-  color: #B1B1B1;
+  color: #b1b1b1;
   font-family: Pretendard;
   font-size: 12px;
   font-style: normal;
@@ -289,7 +310,7 @@ h1 {
   content: "";
   flex: 1 0 0;
   height: 1px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 .lnb .menu {
   cursor: pointer;
@@ -312,10 +333,10 @@ h1 {
   background: rgba(14, 82, 218, 0.0588235294);
 }
 .lnb .menu.ac {
-  color: #FFF;
-  border-top: 1px solid #86A8EE;
-  border-bottom: 1px solid #86A8EE;
-  background: #0E51DA;
+  color: #fff;
+  border-top: 1px solid #86a8ee;
+  border-bottom: 1px solid #86a8ee;
+  background: #0e51da;
 }
 @media screen and (max-width: 768px) {
   .lnb {
@@ -324,8 +345,8 @@ h1 {
 }
 
 .searchBar {
-  border-right: 1px solid #E3E3E8;
-  background: #FFF;
+  border-right: 1px solid #e3e3e8;
+  background: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
@@ -360,7 +381,7 @@ select {
   transition: 0.5s;
   position: relative;
   border-radius: 10px;
-  background: #EDEEF1;
+  background: #edeef1;
   display: flex;
   padding: 10px 16px;
   padding: 10px;
@@ -376,28 +397,31 @@ select {
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
-input::-moz-placeholder, select::-moz-placeholder {
-  color: #B4BECC;
+input::-moz-placeholder,
+select::-moz-placeholder {
+  color: #b4becc;
 }
 input::placeholder,
 select::placeholder {
-  color: #B4BECC;
+  color: #b4becc;
 }
 input:disabled,
 select:disabled {
   border: 0;
-  background-color: #BEC0C5;
-  color: #A2A5AA;
+  background-color: #bec0c5;
+  color: #a2a5aa;
   cursor: no-drop;
 }
-input:disabled::-moz-placeholder, select:disabled::-moz-placeholder {
-  color: #A2A5AA;
+input:disabled::-moz-placeholder,
+select:disabled::-moz-placeholder {
+  color: #a2a5aa;
 }
 input:disabled::placeholder,
 select:disabled::placeholder {
-  color: #A2A5AA;
+  color: #a2a5aa;
 }
-input:hover, input:focus,
+input:hover,
+input:focus,
 select:hover,
 select:focus {
   border-color: #000;
@@ -411,7 +435,7 @@ select:focus {
   height: 32px;
   box-sizing: border-box;
 }
-.fileAttatch input[type=file] {
+.fileAttatch input[type="file"] {
   padding-top: 6px;
   padding-bottom: 0;
 }
@@ -438,7 +462,8 @@ select {
   padding-right: 30px;
   background: #fff url(../img/ic_select_arr.svg) center right 12px no-repeat;
 }
-select:active, select:focus-visible {
+select:active,
+select:focus-visible {
   outline: 1px solid #000;
 }
 
@@ -450,8 +475,8 @@ select:active, select:focus-visible {
   box-sizing: border-box;
 }
 
-[class*=Btn],
-[class*=btn-] {
+[class*="Btn"],
+[class*="btn-"] {
   cursor: pointer;
   margin: 0 2px;
   transition: 0.2s;
@@ -471,8 +496,8 @@ select:active, select:focus-visible {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  color: #FFF;
-  background: #0E51DA;
+  color: #fff;
+  background: #0e51da;
 }
 .btn-blue:hover {
   background: #0641b6;
@@ -491,8 +516,8 @@ select:active, select:focus-visible {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  color: #3779FF;
-  background: #D0DFFF;
+  color: #3779ff;
+  background: #d0dfff;
 }
 .btn-skyblue:hover {
   background-color: #c5d5f9;
@@ -532,8 +557,8 @@ select:active, select:focus-visible {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  color: #838A93;
-  background: #EDEEF1;
+  color: #838a93;
+  background: #edeef1;
 }
 .btn-grey:hover {
   background: #dcdde0;
@@ -552,8 +577,8 @@ select:active, select:focus-visible {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  color: #E92E1E;
-  background: #FFE6E4;
+  color: #e92e1e;
+  background: #ffe6e4;
 }
 .btn-red:hover {
   background: #fad3d0;
@@ -573,8 +598,8 @@ select:active, select:focus-visible {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  color: #FFF;
-  background: #E92E1E;
+  color: #fff;
+  background: #e92e1e;
 }
 .btn-remove:hover {
   background: #d02313;
@@ -595,7 +620,7 @@ select:active, select:focus-visible {
   border-radius: 8px;
   gap: 4px;
   color: #fff;
-  background: #0B8D5E;
+  background: #0b8d5e;
 }
 .btn-excel::before {
   content: "";
@@ -624,14 +649,14 @@ label {
   letter-spacing: -0.24px;
   padding-right: 4px;
 }
-label input[type=radio] {
+label input[type="radio"] {
   width: 20px;
   height: 20px;
   padding: 0;
   margin: 0;
   background: #fff url(../img/ic_radio_off.svg) center no-repeat;
 }
-label input[type=radio]:checked {
+label input[type="radio"]:checked {
   background-image: url(../img/ic_radio_on.svg);
 }
 
@@ -642,7 +667,7 @@ label input[type=radio]:checked {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.btnWrap [class*=btn] {
+.btnWrap [class*="btn"] {
   height: 38px;
   border-radius: 8px;
 }
@@ -652,7 +677,7 @@ label input[type=radio]:checked {
   align-items: center;
   gap: 4px;
 }
-.checkboxLabel input[type=checkbox] {
+.checkboxLabel input[type="checkbox"] {
   margin: 0;
   padding: 0;
   border: 0;
@@ -663,13 +688,13 @@ label input[type=radio]:checked {
   height: 20px;
   background: transparent url(../img/ic_checkbox_off.svg) center no-repeat;
 }
-.checkboxLabel input[type=checkbox]:checked {
+.checkboxLabel input[type="checkbox"]:checked {
   background-image: url(../img/ic_checkbox_on.svg);
 }
 
 .toggleBtnBox {
   border-radius: 8px;
-  background: #EDEEF1;
+  background: #edeef1;
   display: flex;
   gap: 2px;
   padding: 2px;
@@ -681,7 +706,7 @@ label input[type=radio]:checked {
 .toggleBtnBox .toggleBtn span {
   padding: 10px 16px;
   border-radius: 8px;
-  color: #838A93;
+  color: #838a93;
   font-family: Pretendard;
   font-size: 12px;
   font-style: normal;
@@ -693,13 +718,13 @@ label input[type=radio]:checked {
   display: none;
 }
 .toggleBtnBox .toggleBtn input:checked + span {
-  color: #4C545E;
+  color: #4c545e;
   background-color: #fff;
 }
 
 .filter {
   border-radius: 16px;
-  background: #F9FAFB;
+  background: #f9fafb;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -709,7 +734,7 @@ label input[type=radio]:checked {
   row-gap: 4px;
 }
 .filter .filterName {
-  color: #484C51;
+  color: #484c51;
   font-family: Pretendard;
   font-size: 18px;
   font-style: normal;
@@ -728,7 +753,7 @@ label input[type=radio]:checked {
   flex-wrap: wrap;
 }
 .filter .box {
-  color: #979CA3;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -741,7 +766,7 @@ label input[type=radio]:checked {
   padding: 12px 16px;
   border-radius: 8px;
   background: #242424;
-  color: #FFF;
+  color: #fff;
   font-family: Pretendard;
   font-size: 12px;
   font-style: normal;
@@ -764,14 +789,14 @@ label input[type=radio]:checked {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 16px;
-  background: #F9FAFB;
+  background: #f9fafb;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 .tray .count {
-  color: #4A7CE2;
+  color: #4a7ce2;
   font-family: Pretendard;
   font-size: 14px;
   font-style: normal;
@@ -780,7 +805,7 @@ label input[type=radio]:checked {
   letter-spacing: -0.28px;
 }
 .tray .label {
-  color: #979CA3;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -804,7 +829,7 @@ label input[type=radio]:checked {
   justify-content: center;
   width: 32px;
   height: 32px;
-  color: #838A93;
+  color: #838a93;
   text-align: center;
   font-family: Pretendard;
   font-size: 15px;
@@ -818,7 +843,7 @@ label input[type=radio]:checked {
   background-color: rgba(0, 0, 0, 0.0666666667);
 }
 .paging .num.ac {
-  background: #0E51DA;
+  background: #0e51da;
   color: #fff;
 }
 .paging .first,
@@ -858,7 +883,7 @@ label input[type=radio]:checked {
   table-layout: fixed;
 }
 .grid table tr:has(td):hover {
-  background-color: #E9EDF4;
+  background-color: #e9edf4;
 }
 .grid table .imgColumn {
   display: none;
@@ -869,14 +894,14 @@ label input[type=radio]:checked {
 .grid table th {
   padding: 4px;
   vertical-align: middle;
-  border-bottom: 0.5px solid #BDBDBD;
+  border-bottom: 0.5px solid #bdbdbd;
   height: 38px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
   box-sizing: border-box;
-  color: #393C40;
+  color: #393c40;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -888,7 +913,7 @@ label input[type=radio]:checked {
   height: 38px;
   vertical-align: middle;
   padding: 4px;
-  color: #4B5262;
+  color: #4b5262;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -918,26 +943,26 @@ label input[type=radio]:checked {
   display: inline-flex;
   width: auto;
   border-radius: 4px;
-  color: #A5ABB2 !important;
-  background: #D2D7DE !important;
-  color: #A2A5AA !important;
-  background: #BEC0C5 !important;
+  color: #a5abb2 !important;
+  background: #d2d7de !important;
+  color: #a2a5aa !important;
+  background: #bec0c5 !important;
 }
 .grid table .btn:hover {
   background: rgb(207, 210, 215) !important;
 }
 .grid table .btn.on {
-  background: #D0DFFF !important;
-  color: #3779FF !important;
+  background: #d0dfff !important;
+  color: #3779ff !important;
 }
 .grid table .btn.on:hover {
   background: #bfd3ff !important;
 }
 .grid table .status {
-  color: #95989C;
+  color: #95989c;
 }
 .grid table .ing {
-  color: #0AAB71;
+  color: #0aab71;
 }
 .grid table .amazon {
   width: 16px;
@@ -1005,17 +1030,17 @@ label input[type=radio]:checked {
 .grid table .imgWrap .img {
   width: 36px;
   height: 36px;
-  background: #D9DCE3;
+  background: #d9dce3;
   outline: 2px solid transparent;
 }
 .grid table .imgWrap .img.ac {
-  outline: 2px solid #0E51DA;
+  outline: 2px solid #0e51da;
 }
 .grid table .imgWrap .img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .grid table .plus {
   display: inline-block;
@@ -1034,7 +1059,7 @@ label input[type=radio]:checked {
   width: 100%;
   border-radius: 10px;
   border: 1px solid #000;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 10px 16px;
   padding: 10px;
   padding-right: 28px;
@@ -1051,7 +1076,7 @@ label input[type=radio]:checked {
   width: 100%;
   border-radius: 10px;
   border: 1px solid #ddd;
-  background: #FFF;
+  background: #fff;
   padding: 10px 16px;
   padding: 10px;
   color: #000;
@@ -1072,7 +1097,7 @@ label input[type=radio]:checked {
   top: 50%;
   right: 16px;
   transform: translateY(-50%);
-  color: #0E51DA;
+  color: #0e51da;
   font-family: Pretendard;
   font-size: 12px;
   font-style: normal;
@@ -1101,7 +1126,7 @@ label input[type=radio]:checked {
   padding: 10px 12px;
   margin-top: 20px;
   margin-bottom: 10px;
-  border-top: 1px solid #E3E3E8;
+  border-top: 1px solid #e3e3e8;
 }
 .sectionTit.noneBorder {
   margin-top: 10px;
@@ -1130,21 +1155,21 @@ label input[type=radio]:checked {
   align-items: center;
   gap: 4px;
   border-radius: 10px;
-  border: 1px solid #B1B1B1;
-  background: #FFF;
+  border: 1px solid #b1b1b1;
+  background: #fff;
 }
 .sectionTit .accodionBtn.close svg {
   transform: rotate(180deg);
 }
 
 .nav-tabs {
-  border-bottom-color: #7F7F8D;
+  border-bottom-color: #7f7f8d;
   gap: 4px;
   margin-bottom: 20px;
 }
 .nav-tabs .nav-link {
-  background: #F9FAFB;
-  color: #9AA1B2;
+  background: #f9fafb;
+  color: #9aa1b2;
   text-align: center;
   font-family: Pretendard;
   font-size: 14px;
@@ -1161,7 +1186,7 @@ label input[type=radio]:checked {
   background: #fff;
   color: #000;
   border: 1px solid;
-  border-color: #7F7F8D #7F7F8D #fff;
+  border-color: #7f7f8d #7f7f8d #fff;
 }
 
 .tableWrap {
@@ -1174,14 +1199,14 @@ label input[type=radio]:checked {
   margin: 0;
 }
 .table tr {
-  border-bottom: 1px solid #E3E3E8;
+  border-bottom: 1px solid #e3e3e8;
 }
 .table tr:last-child {
   border: 0;
 }
 .table th {
-  background: #EDEEF1;
-  color: #979CA3;
+  background: #edeef1;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1198,7 +1223,7 @@ label input[type=radio]:checked {
   gap: 4px;
 }
 .table td {
-  background: #F9FAFB;
+  background: #f9fafb;
   padding: 10px 20px;
 }
 .table td .value {
@@ -1212,7 +1237,7 @@ label input[type=radio]:checked {
   letter-spacing: -0.24px;
 }
 .table .box label {
-  color: #979CA3;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1221,7 +1246,7 @@ label input[type=radio]:checked {
   letter-spacing: -0.26px;
   min-width: 100px;
 }
-.table label:has(input[type=radio]) {
+.table label:has(input[type="radio"]) {
   padding: 5px 0;
   min-width: unset;
   margin-right: 8px;
@@ -1230,7 +1255,7 @@ label input[type=radio]:checked {
   width: 24px;
   height: 24px;
   border-radius: 8px;
-  background: #E0E2E7 url(../img/ic_remove.svg) center no-repeat;
+  background: #e0e2e7 url(../img/ic_remove.svg) center no-repeat;
   cursor: pointer;
 }
 
@@ -1240,12 +1265,12 @@ label input[type=radio]:checked {
   margin-top: 140px;
   padding: 30px;
   border-radius: 30px;
-  background: #F9FAFB;
+  background: #f9fafb;
   display: flex;
   flex-direction: column;
   gap: 12px;
   text-align: center;
-  color: #979CA3;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1267,7 +1292,7 @@ label input[type=radio]:checked {
 .login .divider {
   width: 1px;
   height: 10px;
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 
 .innerModal {
@@ -1323,17 +1348,17 @@ label input[type=radio]:checked {
   width: 100%;
   flex: 1 0 0;
   border: 0;
-  border-bottom: 2px solid #EDEEF1;
+  border-bottom: 2px solid #edeef1;
   text-align: center;
-  color: #838A93;
+  color: #838a93;
 }
 .modal .nav-tabs .nav-link.active {
   color: #222;
-  border-color: #0E51DA;
+  border-color: #0e51da;
 }
 .modal label.grey {
   width: 100px;
-  color: #979CA3;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1342,7 +1367,7 @@ label input[type=radio]:checked {
   letter-spacing: -0.26px;
 }
 .modal .box label {
-  color: #979CA3;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1370,11 +1395,11 @@ label input[type=radio]:checked {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  background-color: #EDEEF1;
+  background-color: #edeef1;
   padding: 10px 8px;
   overflow: auto;
   border-radius: 8px;
-  color: #4B5262;
+  color: #4b5262;
   font-family: Pretendard;
   font-size: 12px;
   font-style: normal;
@@ -1399,7 +1424,7 @@ label input[type=radio]:checked {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  color: #979CA3;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 16px;
   font-style: normal;
@@ -1417,9 +1442,9 @@ label input[type=radio]:checked {
   flex-direction: column;
   gap: 10px;
   border-radius: 8px;
-  background: #EDEEF1;
+  background: #edeef1;
   padding: 10px 8px;
-  color: #4B5262;
+  color: #4b5262;
   font-family: Pretendard;
   font-size: 12px;
   font-style: normal;
@@ -1439,7 +1464,7 @@ label input[type=radio]:checked {
   position: absolute;
   top: 5px;
   left: 5px;
-  background-color: #4B5262;
+  background-color: #4b5262;
   border-radius: 50%;
 }
 .modal .pWrap {
@@ -1448,7 +1473,7 @@ label input[type=radio]:checked {
   overflow: auto;
 }
 .modal p {
-  color: #4B5262;
+  color: #4b5262;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1463,7 +1488,7 @@ label input[type=radio]:checked {
   width: 100%;
   height: 180px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .modal .formWrap {
   display: flex;
@@ -1489,19 +1514,19 @@ label input[type=radio]:checked {
   letter-spacing: -0.26px;
 }
 .modal .inputWrap.green input {
-  border: 1px solid #2BD397;
+  border: 1px solid #2bd397;
 }
 .modal .inputWrap.green .mesg {
-  color: #2BD397;
+  color: #2bd397;
 }
 .modal .inputWrap.red input {
-  border: 1px solid #FF1C1C;
+  border: 1px solid #ff1c1c;
 }
 .modal .inputWrap.red .mesg {
-  color: #FF1C1C;
+  color: #ff1c1c;
 }
 .modal .inputLabel {
-  color: #979CA3;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1519,8 +1544,8 @@ label input[type=radio]:checked {
   box-sizing: border-box;
   padding: 10px 8px;
 }
-.modal input[type=radio],
-.modal input[type=checkbox] {
+.modal input[type="radio"],
+.modal input[type="checkbox"] {
   flex: 0 0 auto;
 }
 .modal .modal-footer {
@@ -1557,21 +1582,23 @@ label input[type=radio]:checked {
 .modal .gridWrap {
   padding: 10px 8px;
   border-radius: 8px;
-  background: #EDEEF1;
+  background: #edeef1;
   overflow: auto;
 }
 .modal .gridWrap.line {
   background-color: transparent;
-  border: 1px solid #ABAEB6;
+  border: 1px solid #abaeb6;
 }
 .modal .gridWrap.line .grid tr {
   background-color: transparent;
 }
-.modal .gridWrap.line .grid th, .modal .gridWrap.line .grid td {
+.modal .gridWrap.line .grid th,
+.modal .gridWrap.line .grid td {
   height: 38px;
   padding: 4px;
 }
-.modal .gridWrap .grid th, .modal .gridWrap .grid td {
+.modal .gridWrap .grid th,
+.modal .gridWrap .grid td {
   height: 22px;
   padding: 2px;
 }
@@ -1585,7 +1612,8 @@ label input[type=radio]:checked {
   box-sizing: content-box;
   padding: 0;
 }
-.modal .imgThumbWrap .imgWrap .prev, .modal .imgThumbWrap .imgWrap .next {
+.modal .imgThumbWrap .imgWrap .prev,
+.modal .imgThumbWrap .imgWrap .next {
   width: 30px;
   height: 100%;
 }
@@ -1612,7 +1640,7 @@ label input[type=radio]:checked {
   letter-spacing: -0.42px;
 }
 .signup .box {
-  color: #979CA3;
+  color: #979ca3;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1620,7 +1648,7 @@ label input[type=radio]:checked {
   line-height: normal;
   letter-spacing: -0.26px;
 }
-.signup .box input:not([type=checkbox]) {
+.signup .box input:not([type="checkbox"]) {
   width: 100%;
 }
 .signup .box .span {
@@ -1647,13 +1675,13 @@ label input[type=radio]:checked {
 .signup .btranWrap {
   margin-top: 0;
 }
-.signup [class*=btn-] {
+.signup [class*="btn-"] {
   min-width: 120px;
 }
 
 .dashboard .iconTray {
   border-radius: 50%;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
   display: flex;
   width: 50px;
@@ -1662,7 +1690,7 @@ label input[type=radio]:checked {
   align-items: center;
 }
 .dashboard h2 {
-  color: #484C51;
+  color: #484c51;
   font-family: Pretendard;
   font-size: 21px;
   font-style: normal;
@@ -1677,7 +1705,7 @@ label input[type=radio]:checked {
   display: flex;
   gap: 4px;
   align-items: center;
-  color: #959BA8;
+  color: #959ba8;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1690,7 +1718,7 @@ label input[type=radio]:checked {
   aspect-ratio: 1/1;
 }
 .dashboard .timeWrap {
-  color: #4B5262;
+  color: #4b5262;
   text-align: center;
   font-family: Pretendard;
   font-size: 30px;
@@ -1713,7 +1741,7 @@ label input[type=radio]:checked {
   flex: 1 0 40px;
   max-width: 120px;
   height: 80px;
-  color: #4B5262;
+  color: #4b5262;
   text-align: center;
   font-family: Pretendard;
   font-size: 30px;
@@ -1727,7 +1755,7 @@ label input[type=radio]:checked {
   left: 0;
   right: 0;
   bottom: 0;
-  color: #4B5262;
+  color: #4b5262;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1736,7 +1764,7 @@ label input[type=radio]:checked {
   letter-spacing: -0.26px;
 }
 .dashboard .timeWrap .divider {
-  color: #4B5262;
+  color: #4b5262;
   text-align: center;
   font-family: Pretendard;
   font-size: 18px;
@@ -1763,13 +1791,13 @@ label input[type=radio]:checked {
   width: calc(100% - 40px - 50px - 50px);
 }
 .dashboard .barWrap .barCompo .barBox.yellow .bar {
-  background: #FB5;
+  background: #fb5;
 }
 .dashboard .barWrap .barCompo .barBox.green .bar {
-  background: #2BD397;
+  background: #2bd397;
 }
 .dashboard .barWrap .barCompo .barBox.blue .bar {
-  background: #0E51DA;
+  background: #0e51da;
 }
 .dashboard .barWrap .barCompo .bar {
   position: relative;
@@ -1778,7 +1806,7 @@ label input[type=radio]:checked {
   max-width: 100%;
   height: 16px;
   border-radius: 4px;
-  background: #FB5;
+  background: #fb5;
 }
 .dashboard .barWrap .barCompo .barCount {
   position: absolute;
@@ -1789,7 +1817,7 @@ label input[type=radio]:checked {
   border-radius: 4px;
   background: #000;
   padding: 3px 8px;
-  color: #F6F6F7;
+  color: #f6f6f7;
   text-align: center;
   font-family: Pretendard;
   font-size: 12px;
@@ -1833,7 +1861,7 @@ label input[type=radio]:checked {
   display: block;
   width: 1px;
   height: 16px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   margin: 0 10px;
 }
 .dashboard .nav-tabs .nav-item:last-child::after {
@@ -1843,7 +1871,7 @@ label input[type=radio]:checked {
   border: 0;
   background-color: transparent;
   padding: 0;
-  color: #484C51;
+  color: #484c51;
   font-family: Pretendard;
   font-size: 21px;
   font-style: normal;
@@ -1869,8 +1897,8 @@ label input[type=radio]:checked {
   min-width: 40px;
   padding: 3px;
   border-radius: 4px;
-  background: #BBEDDB;
-  color: #09AB71;
+  background: #bbeddb;
+  color: #09ab71;
   font-family: Pretendard;
   font-size: 12px;
   font-style: normal;
@@ -1879,7 +1907,7 @@ label input[type=radio]:checked {
   letter-spacing: -0.24px;
 }
 .dashboard .tab-content .text {
-  color: #4B5262;
+  color: #4b5262;
   font-family: Pretendard;
   font-size: 13px;
   font-style: normal;
@@ -1892,7 +1920,7 @@ label input[type=radio]:checked {
   overflow: hidden;
 }
 .dashboard .tab-content .date {
-  color: #979CA3;
+  color: #979ca3;
   text-align: right;
   font-family: Pretendard;
   font-size: 13px;
@@ -1914,7 +1942,7 @@ label input[type=radio]:checked {
 }
 
 .graphSelect .box {
-  color: #484C51;
+  color: #484c51;
   font-family: Pretendard;
   font-size: 16px;
   font-style: normal;
@@ -1927,4 +1955,4 @@ label input[type=radio]:checked {
 .graphArea {
   width: 100%;
   height: 344px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
