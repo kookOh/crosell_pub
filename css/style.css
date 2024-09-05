@@ -200,26 +200,7 @@ h1 {
   font-weight: 500;
   line-height: 1.4;
 }
-
-.bellCon .list {
-  max-width: 240px;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 8px 12px;
-  border-bottom: 1px solid #e3e3e8;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
 .gnb .bell .bellCon .list:last-child {
-  border: 0;
-}
-.gnb .mobileMenu {
-  display: none;
-}
-
-.bellCon .list:last-child {
   border: 0;
 }
 .gnb .mobileMenu {
@@ -237,7 +218,6 @@ h1 {
 }
 @media screen and (min-width: 769px) {
   .gnb .mobileMenuPanel,
-  .gnb .bellCon,
   .gnb .offcanvas-backdrop {
     display: none;
   }
